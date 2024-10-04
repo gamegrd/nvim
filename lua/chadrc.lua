@@ -5,7 +5,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "material-darker",
+	theme = "github_dark",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
