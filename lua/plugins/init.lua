@@ -30,7 +30,6 @@ return {
   {
     "folke/flash.nvim",
     event = "VeryLazy",
-    ---@type Flash.Config
     opts = {},
     -- stylua: ignore
     keys = {
@@ -42,8 +41,15 @@ return {
     },
   },
 
-  -- 多光标
-
+  -- 安装 vim-multiple-cursors 插件
+  {
+    "terryma/vim-multiple-cursors",
+    config = function()
+      vim.g.multi_cursor_start_word_key      = '<C-n>'    -- 启动多光标选择当前单词
+      vim.g.multi_cursor_prev_key            = '<C-p>'    -- 移动到上一个光标
+    end,
+    lazy = false,
+  },
 
   --------------
   {
