@@ -11,23 +11,15 @@ vim.opt.backup = false
 
 require("telescope").setup {
   defaults = {
-    file_ignore_patterns = {
-      "node_modules/",
-      ".git/",
-      "build/",
-    },
+    -- 其他配置
     vimgrep_arguments = {
-      "rg",
-      "--color=never",
-      "--no-heading",
-      "--with-filename",
-      "--line-number",
-      "--column",
-      "--smart-case",
-      "--ignore-file",
-      ".gitignore",
+      "fd",
+      "--type",
+      "f",
+      "--hidden",
+      "--follow",
+      "--exclude",
+      ".git",
     },
   },
-
-  extensions = {},
 }
