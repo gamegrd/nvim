@@ -1,7 +1,7 @@
 .PHONY: all clean
 
-clean:
+reinstall:
+	rm -rf ~/.config/nvim
+	rm -rf ~/.local/state/nvim
 	rm -rf ~/.local/share/nvim
-
-all: clean
 	nvim
