@@ -6,6 +6,7 @@ vim.opt.relativenumber = true
 vim.opt.swapfile = false
 vim.opt.undofile = false
 vim.opt.backup = false
+vim.opt.writebackup = false
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
 
